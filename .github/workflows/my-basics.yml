@@ -1,4 +1,8 @@
 name: My_GitHub_Actions
+env:
+  App_Name: "MyApp"
+  Package: "flask-${{ github.sha }}"
+  
 
 on:
   push:
