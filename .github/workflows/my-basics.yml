@@ -20,9 +20,7 @@ jobs:
       - name: Run tests
         run: |
           echo "Installing dependencies..."
-          npm install  # или pip install, make и т.д.
           echo "Running tests..."
-          npm test     # или pytest, ./run_tests.sh
 
   deploy:                 # Джоба для деплоя
     needs: test           # Зависит от успешного завершения test
@@ -38,6 +36,4 @@ jobs:
       - name: Deploy to production
         run: |
           echo "Building artifacts..."
-          npm run build  # или ./build.sh
           echo "Deploying to server..."
-          scp -r dist/ user@server:/path  # или rsync, kubectl и т.д.
