@@ -1,0 +1,23 @@
+name: My_GitHub_Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my_testing:
+    runs-on:   
+      labels:
+      
+    steps:
+      name: Print Hello Message
+      run: echo "Hello World"
+
+  my_deploy:
+    runs-on:   
+      labels: 
+      
+    steps:
+      name: Print Hello Message
+      run: echo "Hello World"
