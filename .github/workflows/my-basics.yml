@@ -16,7 +16,8 @@ jobs:
 
   my_deploy:
     runs-on:   
-      labels: 
+      labels:
+    needs: my_testing
       
     steps:
       name: Print Hello Message
